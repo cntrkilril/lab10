@@ -7,6 +7,7 @@
     <title>Крестики-нолики</title>
 </head>
 <body>
+    <script src="scripti.js"></script>
     <header>
         <h1>КРЕСТИКИ-НОЛИКИ</h1>
     </header>
@@ -15,7 +16,24 @@
             <p class="rules">Простая игра в Крестики-нолики. Первым ходит победитель. Повеселитесь с другом!</p>
         </div>
         <h2>Количество побед</h2>
-        <h2>Ход</h2>
+        <div class="victories">
+            <div class="vic1">
+                <p class="textsch1">Первый игрок: </p>
+                <p class="sch1k" id="sch1">0</p>
+            </div>
+            <div class="vic2">
+                <p class="textsch2">Второй игрок: </p>
+                <p class="sch2k" id="sch2">0</p>
+            </div>
+        </div>
+        <h2 class="ZagStep">Ход</h2>
+        <div class="step">
+            <p class="TextStep">Ходит</p>
+            <p id="NumberPlayers">Первый</p>
+            <p class="TextStep">игрок</p>
+            <p class="TextStep">-</p>
+            <p id="ZnakPlayers">X</p>
+        </div>
     </main>
 </body>
 </html>

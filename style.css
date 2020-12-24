@@ -22,3 +22,55 @@ h2 {
     text-align: center;
     font-weight: bold;
 }
+.victories {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.vic1 {
+    padding-right: 50px;
+    padding-left: 50px;
+    float: left;
+}
+.textsch1 {
+    float: left;
+}
+.sch1k {
+    float: left;
+    margin-left: 2em;
+}
+.vic2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    float: left;
+}
+.textsch2 {
+    float: left;
+}
+.sch2k {
+    float: left;
+    margin-left: 2em;
+}
+.ZagStep {
+    margin-top: 3rem;
+}
+.step {
+    position: absolute;
+    top: 275px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.TextStep {
+    float: left;
+    margin-left: 1rem;
+}
+#NumberPlayers {
+    float: left;
+    margin-left: 1rem;
+}
+#ZnakPlayers {
+    float: left;
+    margin-left: 1rem;
+}
