@@ -74,3 +74,33 @@ h2 {
     float: left;
     margin-left: 1rem;
 }
+#area {
+    position: absolute;
+    top: 455px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.but2 {
+    position: absolute;
+    top: 640px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+button {
+    float: left;
+}
+#GreenBut {
+    height: 2rem;
+    width: 10rem;
+    background-color: green;
+    color: white;
+}
+#RedBut {
+    background-color: red;
+    color: white;
+    height: 2rem;
+    width: 10rem;
+    margin-left: 1rem;
+}
