@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Крестики-нолики</title>
 </head>
-<body>
+<body onload="Game()">
     <script src="scripti.js"></script>
     <header>
         <h1>КРЕСТИКИ-НОЛИКИ</h1>
     </header>
     <main>
         <div class="rulesblok">
-            <p class="rules">Простая игра в Крестики-нолики. Первым ходит победитель. Повеселитесь с другом!</p>
+            <p class="rules">Простая игра в Крестики-нолики. Первым ходит победитель. Повеселись с другом!</p>
         </div>
         <h2>Количество побед</h2>
         <div class="victories">
@@ -36,26 +36,16 @@
         </div>
     </main>
     <canvas width=300 height=300 id='area'></canvas>
-    <script>
-            var area = document.getElementById("area");
-            var ctx = area.getContext('2d');
-            ctx.fillStyle="white"
-            ctx.fillRect(0, 0, area.width, area.height);
-            ctx.beginPath();
-            ctx.moveTo(100,0);
-            ctx.lineTo(100,300);
-            ctx.moveTo(200,300);
-            ctx.lineTo(200,0);
-            ctx.moveTo(0,100);
-            ctx.lineTo(300,100);
-            ctx.moveTo(300,200);
-            ctx.lineTo(0,200);
-            ctx.strokeStyle="black";
-            ctx.stroke();
-    </script>
     <div class="but2">
-        <button id="GreenBut">Начать раунд</button>
-        <button id="RedBut">Сброс</button>
+        <button id="GreenBut" onclick="NewRound()">Начать раунд</button>
+        <button id="RedBut" onclick="Game()">Сброс</button>
+    </div>
+    <div class="info">
+        <p class="rules"><b>Информация о раунде</b></p>
+        <p class="textsch1">Первый игрок играет за </p>
+        <p class="sch1k" id="Znak1">X</p>
+        <p class="textsch2">Второй игрок играет за </p>
+        <p class="sch2k" id="Znak2">O</p>
     </div>
 </body>
 </html>

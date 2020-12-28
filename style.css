@@ -104,3 +104,11 @@ button {
     width: 10rem;
     margin-left: 1rem;
 }
+.info {
+    position: absolute;
+    left: 80%;
+    top: 300px;
+    width: 250px;
+    background-color: white;
+    border: black solid 3px;
+}
