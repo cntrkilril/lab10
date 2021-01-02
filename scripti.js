@@ -174,7 +174,8 @@ function Game() {
             }
         }
     function LogicOfGame(x,y,k) {
-        if (NumberOfPlayers==1) {
+        if (a[k]!="X" && a[k]!="O") {
+            if (NumberOfPlayers==1) {
             a[k]=Znak[1];
             if (Znak[1]=="X") {
                 Krestik(x,y)
@@ -186,17 +187,18 @@ function Game() {
             NumberOfPlayers=2;
             ChangePlayers();
         }
-        else if (NumberOfPlayers==2) {
-            a[k]=Znak[2];
-            if (Znak[2]=="X") {
-                Krestik(x,y)
+            else if (NumberOfPlayers==2) {
+                a[k]=Znak[2];
+                if (Znak[2]=="X") {
+                    Krestik(x,y)
             }
-            else {
-                Nolik(x,y)
-            }
+                else {
+                    Nolik(x,y)
+                }
             Proverka();
             NumberOfPlayers=1;
             ChangePlayers()
+        }
         }
     }
     area.onclick = function () {
